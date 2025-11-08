@@ -2,12 +2,47 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #434455; 
     background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+}
+.section {
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.container {
+    max-width: 1158px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 156px;
+    margin-right: 156px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 header{
     background-color: white;
 }
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 header ul {
     list-style-type: none;
+    display: flex;
+    gap: 40px;
 }
 header a {
     text-decoration: none;
@@ -15,6 +50,10 @@ header a {
 }
 header a:focus,  header a:hover {
     color: #404BBF;
+}
+.nav {
+    display: flex;
+    align-items: center;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -25,6 +64,8 @@ header a:focus,  header a:hover {
     text-transform: uppercase;
     text-decoration: none;
     color: #4d5ae5;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
 }
 .accent {
     color: #2e2f42;
@@ -42,24 +83,29 @@ header a:focus,  header a:hover {
 .address {
     font-style: normal;
 }
+.address ul {
+    margin: 0;
+}
 .mail {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.main_first_section {
+.section:first-child {
     background-color: #2E2F42;
 }
-.main_first_section h1 {
+.section h1 {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: white;
+    margin: 0;
+    padding: 188px 316px 0 316px;
 }
-.main_first_section .button {
+.section .button {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -69,19 +115,26 @@ header a:focus,  header a:hover {
     background-color: #4D5AE5;
     border: none;
     cursor: pointer;
+    margin: 0;
+    padding: 16px 32px;
+    border-radius: 4px;
+    margin-left: 480px;
+    margin-top: 48px;
+    margin-bottom: 188px;
+    
 }
 .button:hover, .button:focus  {
     background-color: #404BBF;
 }
-.main_second_section ul {
+.section ul {
+    margin: 0;
+    padding-top: 72px;
+    padding-left: 0;
     list-style-type: none;
-}
-.main_second_section h3 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+
 }
 p {
     font-size: 16px;
@@ -89,17 +142,25 @@ p {
     letter-spacing: 0.02em;
     color: #434455;
 }
-.main_third_section {
+.section:nth-child(odd):not(:first-child) {
     background-color: #F4F4FD;
-    text-align: center;
 }
 .main_third_section_li {
     background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.main_third_section ul {
-    list-style-type: none;
+.main_third_section_li h3 {
+    padding-top: 32px;
+    margin: 0;
 }
-.main_third_section p {
+.main_third_section_li p {
+    padding-top: 8px;
+    padding-bottom: 32px;
+    margin: 0;
+}
+.section p {
     font-size: 16px;
 }
 h2 {
@@ -110,6 +171,7 @@ h2 {
     text-align: center;
     text-transform: capitalize;
     color: #2E2F42;
+    margin: 0;
 }
 h3 {
     font-size: 20px;
@@ -118,12 +180,16 @@ h3 {
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
-.main_fourth_section ul {
-    list-style-type: none;
+.rrrr, .main_fourth_section_p {
+    margin-left: 16px;
 }
 footer {
     background-color: #2E2F42;
     color: #F4F4FD;
+}
+footer .container{
+    padding-top: 102px;
+    padding-bottom: 100px;
 }
 footer .logo {
     color: #4d5ae5;
@@ -133,4 +199,5 @@ footer .logo {
 }
 footer p {
     color: currentColor;
+    width: 264px;
 }
