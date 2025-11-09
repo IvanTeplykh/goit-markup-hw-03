@@ -9,9 +9,13 @@ body {
 img {
     display: block;
 }
-.section {
+.section:first-child {
     padding-bottom: 188px;
     padding-top: 188px;
+}
+.section {
+    padding-bottom: 120px;
+    padding-top: 120px;
 }
 .visually-hidden {
     position: absolute;
@@ -27,6 +31,7 @@ img {
 }
 .container {
     width: 1158px;
+    margin: auto;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 156px;
@@ -160,9 +165,11 @@ p {
 .wwweeeee {
     margin-top: 0;
     margin-bottom: 8px;
+    text-align: center;
 }
 .main_second_section_p {
     margin: 0;
+    text-align: center;
 }
 .section:nth-child(odd):not(:first-child) {
     background-color: #F4F4FD;
@@ -210,6 +217,9 @@ h3 {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+}
+.main_fourth_section_ul {
+    row-gap: 48px;
 }
 .main_fourth_section_div {
     padding: 32px 16px;
