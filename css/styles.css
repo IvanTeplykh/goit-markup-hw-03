@@ -61,7 +61,7 @@ h3 {
 
 .container {
     width: 1158px;
-    margin: 0;
+    margin: 0 auto;
     margin-left: 156px;
     margin-right: 156px;
     padding-left: 15px;
@@ -227,8 +227,9 @@ header a:focus,  header a:hover {
 .qqqqq {
     margin-bottom: 72px;
 }
-.main_fourth_section_li {
-    margin-bottom: 48px;
+.section .main_fourth_section_ul {
+    display: flex;
+    row-gap: 48px;
 }
 .main_fourth_section_div {
     padding: 32px 16px;
